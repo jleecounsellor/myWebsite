@@ -59,7 +59,7 @@ app.post("/contact", function(req, res){
   });
 });
 
-let port = process.env.PORT || 3000;
+let port = process.env.PORT || 80;
 
 
 app.listen(port, function() {
