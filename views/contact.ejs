@@ -1,0 +1,38 @@
+<%- include("header") -%>
+
+<div class="container py-4" id="second">
+
+  <form id="contactForm" method="post">
+    <h2>Contact me!</h2>
+    <div class="mb-3">
+      <label class="form-label" for="name">Name</label>
+      <input class="form-control" id="name" name="name" type="text" />
+    </div>
+    <div class="mb-5 pb-5">
+      <label class="form-label" for="emailAddress">Email Address</label>
+      <input class="form-control" id="emailAddress" name="email" type="email" />
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="message">Message</label>
+      <textarea class="form-control" id="message" type="text" name="message" placeholder="Leave me a message" style="height: 10rem;"></textarea>
+    </div>
+    <div class="d-grid">
+      <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+    </div>
+  </form>
+</div>
+<div>
+  <h4 class="disclaimer">If you would like to get in contact with me, feel free to fill out the above form. This
+    will add your information into my database. If you do not want your information saved, you can
+    contact me via my email address available by clicking the mail icon on the bottom of this page. </h4>
+<iframe width="60%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-122.19092667801307%2C47.958073119156616%2C-122.0168620417826%2C48.04662910496265&amp;layer=hot" style="border: 1px solid black"></iframe>
+
+</div>
+
+
+
+
+
+
+
+<%- include("footer") -%>
