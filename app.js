@@ -6,11 +6,9 @@ const {
   check,
   validationResult
 } = require("express-validator");
+require("dotenv").config();
+require("./public/js/initDB")();
 
-
-mongoose.connect("mongodb+srv://jamieleeg:aesBw39YZFnbGvU@cluster0.waagn.mongodb.net/portfolioDB", {
-  useNewUrlParser: true
-});
 
 //create the schema
 const postSchema = {
