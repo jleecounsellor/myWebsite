@@ -1,16 +1,26 @@
 <%- include("header") -%>
 
 <div class="container py-4" id="second">
+  <div class="alertBox">
+    <% if(typeof alert != 'undefined') { %>
+    <% alert.forEach(function(error) { %>
+    <div class="alert" role="alert">
+      <img src="images/icon-error.svg" class="errorIcon" alt="error" />
+      <%= error.msg %>
+    </div>
+    <% }) %>
+    <% } %>
+  </div>
 
   <form id="contactForm" method="post">
     <h2>Contact me!</h2>
     <div class="mb-3">
       <label class="form-label" for="name">Name</label>
-      <input class="form-control" id="name" name="name" type="text" />
+      <input class="form-control" id="name" name="name" type="text" value="<%= data.name %>">
     </div>
     <div class="mb-5 pb-5">
       <label class="form-label" for="emailAddress">Email Address</label>
-      <input class="form-control" id="emailAddress" name="email" type="email" />
+      <input class="form-control" id="emailAddress" name="email" type="email" value="<%= data.email %>">
     </div>
     <div class="mb-3">
       <label class="form-label" for="message">Message</label>
