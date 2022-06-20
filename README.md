@@ -6,6 +6,8 @@ This is a website to showcase some of the work that I've done to prepare me for 
 
 - [Overview](#overview)
   - [Links](#links)
+- [My process](#my process)
+  - [Built with](#built with)
 - [Author](#author)
 
 
@@ -13,8 +15,18 @@ This is a website to showcase some of the work that I've done to prepare me for 
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: (https://counsellorj.herokuapp.com/)
+
+## My process
+
+### Built with
+- Semantic HTML5 markup
+- CSS custom properties
+- Bootstrap
+- EJS
+- Mongoose
+- MongoDB
 
 ## Author
 
-- Website - [Jamie Counsellor](https://www.your-site.com)
+- Website - [Jamie Counsellor](https://counsellorj.herokuapp.com/)
