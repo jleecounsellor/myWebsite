@@ -30,23 +30,23 @@ app.use(bodyParser.urlencoded({
 app.use(express.static("public"));
 
 
-app.get("/", function(req, res) {
+app.get("/", function (req, res) {
 
   res.render("home");
 });
 
-app.get("/projects", function(req, res) {
+app.get("/projects", function (req, res) {
 
   res.render("projects");
 });
 
-app.get("/contact", function(req, res) {
+app.get("/contact", function (req, res) {
   res.render("contact", {
     data: {}
   });
 });
 
-app.post("/home", function(req, res) {
+app.post("/home", function (req, res) {
   res.render("home");
 });
 
@@ -76,7 +76,7 @@ app.post("/contact",
         email: req.body.emailAddress,
         message: req.body.message
       });
-      post.save(function(err) {
+      post.save(function (err) {
         if (!err) {
           res.redirect("/");
         }
@@ -84,9 +84,11 @@ app.post("/contact",
     }
   });
 
-let port = process.env.PORT || 80;
+let port = process.env.PORT || 8000;
 
 
-app.listen(port, function() {
+app.listen(port, function () {
   console.log("Server started on port " + port);
 });
+
+
