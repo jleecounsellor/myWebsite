@@ -135,17 +135,27 @@ hr {
   margin: auto;
 }
 
-.skill-row, .education-row, .experience-row{
-  width: 50%;
+
+.skill-row, .education-row {
+  width: 950px; 
   margin: 50px auto 10px;
   text-align: left;
 }
 
-.fa-desktop, .fa-database, .fa-terminal, .fa-graduation-cap, .fa-briefcase {
+.fa-desktop, .fa-database, .fa-terminal, .fa-graduation-cap {
   color: var(--DarkGrey);
   width: 25%;
   float: left;
   margin: 10px 50px 50px 10px;
+}
+
+.fa-terminal, .fa-database {
+  padding-bottom: 30px;
+}
+
+
+.container{
+  width: 110%; 
 }
 
 .contact-message {
@@ -185,11 +195,6 @@ hr {
   top: -2px;
 }
 
-.disclaimer{
-  margin: 0 auto;
-  width: 70%;
-}
-
 .spacer {
   margin-top: 100px;
 }
@@ -208,6 +213,12 @@ hr {
   font-family: 'Montserrat', sans-serif;
 }
 
+@media (max-width: 1932px) {
+  .skill-row, .education-row {
+    width: 50%; 
+  }
+}
+
 @media (max-width: 890px) {
   .overlay h1 {
     position: absolute;
@@ -221,9 +232,6 @@ hr {
   .container.py-4{
     width: 100%;
   }
-  .disclaimer {
-    width: 80%;
-    padding: 60px;
 }
 @media (max-width: 590px) {
   .fa-desktop, .fa-database, .fa-terminal, .fa-graduation-cap {
